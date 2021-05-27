@@ -1,1 +1,1 @@
-# Akinator
+# Akinator Bot
