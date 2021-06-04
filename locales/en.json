@@ -1,0 +1,61 @@
+{
+    "theme": {
+        "translate": "Theme",
+        "description": "Please choose game thematic.",
+        "instruction": "React to choose a theme!",
+        "character": "Character",
+        "object": "Object",
+        "animal": "Animal",
+
+        "aborted": "I didn't receive your reply. Game aborted..."
+    },
+    "channel": {
+        "translate": "Channel"
+    },
+    "game": {
+        "fail": {
+            "already": "There is already an on-going Akinator game in this channel!\n> **Channel ID:** %channel.id%\n> **Channel name:** %channel.name%"
+        },
+        "startup": {
+            "message": "Starting up a game in this channel...",
+            "footer": "Starting a game for %player%"
+        },
+        "run": {
+            "progress": "Progress: %progress%",
+            "question": "Question: %question_count%",
+            "instruction_react": "Choose your answer by reacting to those:",
+            "answers_react": "> ✅ Yes\n> ❌ No\n> ❔ Don't know\n> 👍 Probably\n> 👎 Probably not",
+            "footer": "Current player: %player%\nPlease wait while the bot is reacting."
+        },
+        "end": {
+            "no_provided_answer": "No answers were provided. Stopping the game...",
+            "remove_msg_20s": "This message will be automatically removed in 20 seconds.",
+
+            "think_of": "I think of %answer%",
+            "correct": "Is my guess correct?",
+            "correct_answer": "> ✅ Yes\n> ❌ No",
+
+            "no_correct": "No reply was provided. I guess I was right.",
+            "footer": "%player%'s game ended.",
+
+            "aki_win": "Great, guessed right one more time!",
+            "aki_lose_ask": "If I was wrong, what is your answer?",
+            "aki_lose_ans": "Answer by typing in the chat.",
+            "aki_lose_win": "Well. I didn't get your answer so I guess I was right.",
+            "aki_lose_same_ans": "Hey I was right! Yay!",
+            "aki_lose": "Bravo! You have defeated me!",
+            "explain": "> I guessed: **%answer%**\n> Your answer: **%player_answer%**"
+        }
+    },
+
+    "command": {
+        "aliases": "Aliases",
+        "start": {
+            "description": "Start the Akinator game with a specific theme based on user's language."
+        },
+        "help": {
+            "name": "Help",
+            "description": "Help for Akinator bot"
+        }
+    }
+}

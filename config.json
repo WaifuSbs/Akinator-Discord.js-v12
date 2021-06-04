@@ -1,0 +1,17 @@
+{
+    "token": "NzIwODY1MjE4NjQwNzQwNDAy.XuMMDQ.UFL5J8ff2o2JrBl48g_vHjwVzhw",
+    "prefix": "a!",
+    "main_color": "#2e8ca3",
+
+    "database": {
+        "host": "localhost",
+        "username": "root",
+        "password": "",
+        "database": "aki",
+        "connectionLimit": 10
+    },
+
+    "performance": {
+        "shard_count": 1
+    }
+}

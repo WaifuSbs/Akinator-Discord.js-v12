@@ -1,0 +1,29 @@
+{
+  "name": "akinator-discord",
+  "version": "1.0.0",
+  "description": "Akinator.com",
+  "main": "bot.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "aki-api": "^5.2.1",
+    "discord.js": "^12.5.3",
+    "i18n": "^0.13.3",
+    "mysql2": "^2.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WeebsLife/Akinator-Discord.js.git"
+  },
+  "author": "TheLT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WeebsLife/Akinator-Discord.js/issues"
+  },
+  "homepage": "https://github.com/WeebsLife/Akinator-Discord.js#readme"
+}

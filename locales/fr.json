@@ -1,0 +1,55 @@
+{
+    "theme": {
+        "translate": "Thème",
+        "character": "Personnage"
+    },
+    "channel": {
+        "translate": "Canal"
+    },
+    "game": {
+        "fail": {
+            "already": "Il y a déjà un jeu Akinator en cours sur cette chaîne!\n> **ID de la chanie:** %channel.id%\n> **Nom du canal:** %channel.name%"
+        },
+        "startup": {
+            "message": "Lancer un jeu sur cette chaîne...",
+            "footer": "Commencer un jeu pour %player%"
+        },
+        "run": {
+            "progress": "Le progrès: %progress%",
+            "question": "Question: %question_count%",
+            "instruction_react": "Choisissez votre réponse en réagissant à celles:",
+            "answers_react": "> ✅ Oui\n> ❌ Non\n> ❔ Ne sais pas\n> 👍 Probablement\n> 👎 Probablement pas",
+            "footer": "Joueur actuel: %player%\nVeuillez patienter pendant que le bot réagit."
+        },
+        "end": {
+            "no_provided_answer": "Aucune réponse n'a été fournie. Arrêter le jeu...",
+            "remove_msg_20s": "Ce message sera automatiquement supprimé dans 20 secondes.",
+
+            "think_of": "Je pense à %answer%",
+            "correct": "Ma supposition est-elle correcte?",
+            "correct_answer": "> ✅ Oui\n> ❌ Non",
+
+            "no_correct": "Aucune réponse n'a été fournie. Je suppose que j'avais raison.",
+            "footer": "Le jeu de %player% est terminé.",
+
+            "aki_win": "Génial, encore trouvé!",
+            "aki_lose_ask": "Si je me suis trompé, quelle est votre réponse?",
+            "aki_lose_ans": "Répondez en tapant dans le chat.",
+            "aki_lose_win": "Bien. Je n'ai pas eu ta réponse donc je suppose que j'avais raison.",
+            "aki_lose_same_ans": "Hé j'avais raison ! Yay!",
+            "aki_lose": "Bravo! Tu m'as vaincu!",
+            "explain": "> J'ai deviné: **%answer%**\n> Ta réponse: **%player_answer%**"
+        }
+    },
+
+    "command": {
+        "aliases": "Aliases",
+        "start": {
+            "description": "Start the Akinator game with a specific theme based on user's language."
+        },
+        "help": {
+            "name": "Help",
+            "description": "Help for Akinator bot"
+        }
+    }
+}
