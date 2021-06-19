@@ -1,55 +1,83 @@
 {
-    "theme": {
-        "translate": "Thème",
-        "character": "Personnage"
-    },
-    "channel": {
-        "translate": "Canal"
-    },
-    "game": {
-        "fail": {
-            "already": "Il y a déjà un jeu Akinator en cours sur cette chaîne!\n> **ID de la chanie:** %channel.id%\n> **Nom du canal:** %channel.name%"
-        },
-        "startup": {
-            "message": "Lancer un jeu sur cette chaîne...",
-            "footer": "Commencer un jeu pour %player%"
-        },
-        "run": {
-            "progress": "Le progrès: %progress%",
-            "question": "Question: %question_count%",
-            "instruction_react": "Choisissez votre réponse en réagissant à celles:",
-            "answers_react": "> ✅ Oui\n> ❌ Non\n> ❔ Ne sais pas\n> 👍 Probablement\n> 👎 Probablement pas",
-            "footer": "Joueur actuel: %player%\nVeuillez patienter pendant que le bot réagit."
-        },
-        "end": {
-            "no_provided_answer": "Aucune réponse n'a été fournie. Arrêter le jeu...",
-            "remove_msg_20s": "Ce message sera automatiquement supprimé dans 20 secondes.",
-
-            "think_of": "Je pense à %answer%",
-            "correct": "Ma supposition est-elle correcte?",
-            "correct_answer": "> ✅ Oui\n> ❌ Non",
-
-            "no_correct": "Aucune réponse n'a été fournie. Je suppose que j'avais raison.",
-            "footer": "Le jeu de %player% est terminé.",
-
-            "aki_win": "Génial, encore trouvé!",
-            "aki_lose_ask": "Si je me suis trompé, quelle est votre réponse?",
-            "aki_lose_ans": "Répondez en tapant dans le chat.",
-            "aki_lose_win": "Bien. Je n'ai pas eu ta réponse donc je suppose que j'avais raison.",
-            "aki_lose_same_ans": "Hé j'avais raison ! Yay!",
-            "aki_lose": "Bravo! Tu m'as vaincu!",
-            "explain": "> J'ai deviné: **%answer%**\n> Ta réponse: **%player_answer%**"
-        }
-    },
-
-    "command": {
-        "aliases": "Aliases",
-        "start": {
-            "description": "Start the Akinator game with a specific theme based on user's language."
-        },
-        "help": {
-            "name": "Help",
-            "description": "Help for Akinator bot"
-        }
-    }
+	"theme": {
+		"translate": "Thème",
+		"description": "Veuillez choisir le thème du jeu.",
+		"instruction": "Réagissez pour choisir un thème!",
+		"character": "Personnage",
+		"object": "Objet",
+		"animal": "Animal",
+		"aborted": "Je n'ai pas reçu votre réponse. Jeu avorté..."
+	},
+	"channel": {
+		"translate": "Canal"
+	},
+	"game": {
+		"fail": {
+			"already": "Il y a déjà un jeu Akinator en cours sur cette chaîne!\n> **ID de la chanie:** %channel.id%\n> **Nom du canal:** %channel.name%"
+		},
+		"startup": {
+			"message": "Lancer un jeu sur cette chaîne...",
+			"footer": "Commencer un jeu pour %player%"
+		},
+		"run": {
+			"progress": "Le progrès: %progress%",
+			"question": "Question: %question_count%",
+			"instruction_react": "Choisissez votre réponse en réagissant à celles:",
+			"answers_react": "> ✅ Oui\n> ❌ Non\n> ❔ Ne sais pas\n> 👍 Probablement\n> 👎 Probablement pas",
+			"footer": "Joueur actuel: %player%\nVeuillez patienter pendant que le bot réagit.",
+			"instruction_chat": "game.run.instruction_chat",
+			"answers_chat": "game.run.answers_chat",
+			"footer_chat": "game.run.footer_chat"
+		},
+		"end": {
+			"no_provided_answer": "Aucune réponse n'a été fournie. Arrêter le jeu...",
+			"remove_msg_20s": "Ce message sera automatiquement supprimé dans 20 secondes.",
+			"think_of": "Je pense à %answer%",
+			"correct": "Ma supposition est-elle correcte?",
+			"correct_answer": "> ✅ Oui\n> ❌ Non",
+			"no_correct": "Aucune réponse n'a été fournie. Je suppose que j'avais raison.",
+			"footer": "Le jeu de %player% est terminé.",
+			"aki_win": "Génial, encore trouvé!",
+			"aki_lose_ask": "Si je me suis trompé, quelle est votre réponse?",
+			"aki_lose_ans": "Répondez en tapant dans le chat.",
+			"aki_lose_win": "Bien. Je n'ai pas eu ta réponse donc je suppose que j'avais raison.",
+			"aki_lose_same_ans": "Hé j'avais raison ! Yay!",
+			"aki_lose": "Bravo! Tu m'as vaincu!",
+			"explain": "> J'ai deviné: **%answer%**\n> Ta réponse: **%player_answer%**"
+		}
+	},
+	"command": {
+		"aliases": "Alias",
+		"start": {
+			"description": "Démarrez le jeu Akinator avec un thème spécifique basé sur la langue de l'utilisateur."
+		},
+		"help": {
+			"name": "Help",
+			"description": "Aide pour le bot Akinator"
+		},
+		"info": {
+			"description": "command.info.description"
+		},
+		"option": {
+			"description": "command.option.description"
+		}
+	},
+	"option": {
+		"name": "Option",
+		"language": "Langue",
+		"opt_lang_changed_suc": "Vous avez changé votre langue actuelle en %language% `%language_code%`",
+		"cur_user": "Utilisateur actuel: %user%",
+		"opt_lang_desc": "Vous pouvez changer votre langue en exécutant la commande: \n`%prefix%option language [ language code ]`",
+		"opt_lang_cur": "**Votre langue actuelle:**",
+		"opt_lang_available": "Langues disponibles (%language_count%):",
+		"opt_lang_already": "Vous utilisez actuellement %language%!",
+		"opt_lang_unknown": "Code de langue inconnu ! Veuillez réessayer.",
+		"description": "Modifier vos préférences",
+		"ans_mode": "Type de réponse",
+		"child_mode": "Mode enfant"
+	},
+	"help": {
+		"name": "help.name",
+		"description": "help.description"
+	}
 }

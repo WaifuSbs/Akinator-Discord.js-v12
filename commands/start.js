@@ -23,9 +23,3 @@ module.exports.run = async(client, message, args, lang, result) => {
         themeHandler.getTheme(client, message, args, lang, theme, ans_mode, child_mode);
     }
 }
-
-module.exports.desc = (lang) => {
-    i18n.setLocale(lang);
-    var desc = i18n.__("command.start.description");
-    return desc;
-}

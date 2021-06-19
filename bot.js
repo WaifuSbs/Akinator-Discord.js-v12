@@ -94,8 +94,22 @@ client.on('message', async message => {
             con.query("SELECT * FROM users WHERE userId = '" + message.author.id + "'", function(err, result) {
                 if (result[0] == null) {
                     const import_user = require("./lib/user");
-                    import_user.run(message);
-                    command.run(client, message, args);
+                    const embed = new Discord.MessageEmbed()
+                        .setColor(config.main_color)
+                        .setTitle("Akinator")
+                        .setDescription(`Welcome, **${message.author.tag}**!\nIt's seem like you first use Akinator bot, let me just get some stuff before we can continue...`)
+                        .addField(`Default user options:`, `> Language: **English** :flag_gb:\n> Answer type: **Reaction** :white_check_mark::x:\n> Child mode: Disable :red_square:`)
+                        .setFooter(`Setting up database for ${message.author.tag}...`)
+                    message.channel.send(embed).then(async msg => {
+                        var src_return = import_user.run(message);
+                        if (src_return == "err") {
+                            message.channel.send("Something went wrong! Please try again.");
+                            msg.delete().catch();
+                            return;
+                        }
+                        message.channel.send("All done!");
+                        msg.delete({ timeout: 20000 }).catch();
+                    })
                 } else {
                     lang = result[0].language;
                     command.run(client, message, args, lang, result);

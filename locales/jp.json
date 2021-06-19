@@ -1,1 +1,109 @@
-{}
+{
+    "theme": {
+        "translate": "Theme",
+        "description": "Please choose game thematic.",
+        "instruction": "React to choose a theme!",
+        "character": "Character",
+        "object": "Object",
+        "animal": "Animal",
+        "aborted": "I didn't receive your reply. Game aborted...",
+        "unknown": "There is no theme with the name: **%theme%**"
+    },
+    "channel": {
+        "translate": "Channel"
+    },
+    "game": {
+        "startup": {
+            "message": "Starting up a game in this channel...",
+            "footer": "Starting a game for %player%"
+        },
+        "run": {
+            "progress": "Progress: %progress%",
+            "question": "Question: %question_count%",
+            "instruction_react": "Choose your answer by reacting to those:",
+            "answers_react": "> ✅ Yes\n> ❌ No\n> ❔ Don't know\n> 👍 Probably\n> 👎 Probably not",
+            "instruction_chat": "Choose your answer by chatting the number of answer:",
+            "answers_chat": "> **1**. Yes\n> **2**. No\n> **3**. Don't know\n> **4**. Probably\n> **5**. Probably not",
+            "other_options": "Other options:",
+            "stop": "Stop the game right now.",
+            "back": "Return to previous question to correct answer.",
+            "footer": "Current player: %player%\nPlease wait while the bot is reacting.",
+            "footer_chat": "Current player: %player%\nPlease answer the question."
+        },
+        "end": {
+            "ended": "Game stopped. Requested by player.",
+            "no_provided_answer": "No answers were provided. Stopping the game...",
+            "remove_msg_20s": "This message will be automatically removed in 20 seconds.",
+            "think_of": "I think of %answer%",
+            "correct": "Is my guess correct?",
+            "correct_answer": "> ✅ Yes\n> ❌ No",
+            "no_correct": "No reply was provided. I guess I was right.",
+            "nsfw_content": "I know who you are thinking of, but I believe this is not for young people.",
+            "footer": "%player%'s game ended.",
+            "aki_win": "Great, guessed right one more time!",
+            "aki_lose_ask": "If I was wrong, what is your answer?",
+            "aki_lose_ans": "Answer by typing in the chat.",
+            "aki_lose_win": "Well. I didn't get your answer so I guess I was right.",
+            "aki_lose_same_ans": "Hey I was right! Yay!",
+            "aki_lose": "Bravo! You have defeated me!",
+            "explain": "> I guessed: **%answer%**\n> Your answer: **%player_answer%**"
+        }
+    },
+    "command": {
+        "aliases": "Aliases",
+        "start": {
+            "description": "Start the Akinator game with a specific theme based on user's language."
+        },
+        "help": {
+            "name": "Help",
+            "description": "Help for Akinator bot"
+        },
+        "info": {
+            "name": "Info",
+            "description": "Info about Akinator bot"
+        },
+        "option": {
+            "name": "Option",
+            "description": "Edit user's preferences"
+        }
+    },
+    "help": {
+        "name": "❔ Help",
+        "description": "Here is list of commands for Akinator bot."
+    },
+    "info": {
+        "description": "Think about a real or fictional character. I will try to guess who it is.\n© Copyright [Elokence](https://elokence.com) - [Akinator](https://akinator.com). All right reserved!",
+        "version": "Version",
+        "library": "Library",
+        "creator": "Creator",
+        "bot": "About bot",
+        "invite": "Invite",
+        "website": "Website"
+    },
+    "option": {
+        "name": "Option",
+        "description": "Edit your preferences\nUse `%prefix%option [ option ]` to edit your preference.",
+        "language": "Language",
+        "ans_mode": "Answer type",
+        "child_mode": "Child mode",
+        "cur_user": "Current user: %user%",
+        "opt_lang_desc": "Don't understand anything? No problem!\nYou can change your language by executing command: \n`%prefix%option language [ language code ]`",
+        "opt_lang_cur": "**Your current language:**",
+        "opt_lang_available": "Available languages (%language_count%):",
+        "opt_lang_unknown": "Unknown language code! Please try again.",
+        "opt_lang_already": "You are currently using %language%!",
+        "opt_lang_changed_suc": "Successfully changed your current language to %language% `%language_code%`",
+        "opt_ans_desc": "You can change your answer type by executing command: \n`%prefix%option answer [ answer type ]`",
+        "opt_ans_cur": "**Your current answer type:**",
+        "opt_ans_available": "Available answer type (%ans_mode_count%):",
+        "opt_ans_unknown": "Unknown answer type! Please try again.",
+        "opt_ans_already": "You are currently using %ans_mode%!",
+        "opt_ans_changed_suc": "Successfully changed your current answer type to **%ans_mode%**",
+        "opt_chm_desc": "Avoid from explicit questions\nYou can disable or enable child mode by executing command: \n`%prefix%option answer [ true/false ]`",
+        "opt_chm_cur": "**Child mode:**",
+        "opt_chm_available": "Enable or Disable Child mode:",
+        "opt_chm_unknown": "Unknown boolean! Please try again.",
+        "opt_chm_already": "You have **%child_mode_status%** child mode!",
+        "opt_chm_changed_suc": "Successfully **%child_mode_status%** child mode."
+    }
+}

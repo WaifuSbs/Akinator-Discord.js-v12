@@ -22,6 +22,8 @@ module.exports = {
                     game_region = "en_animals";
                     chose_theme = i18n.__("theme.animal");
                     game_handler.run(client, message, lang, chose_theme, game_region, ans_mode, child_mode);
+                } else {
+                    unknown_theme();
                 }
                 break;
             case "fr":
@@ -37,8 +39,18 @@ module.exports = {
                     game_region = "fr_animals";
                     chose_theme = i18n.__("theme.animal");
                     game_handler.run(client, message, lang, chose_theme, game_region, ans_mode, child_mode);
+                } else {
+                    unknown_theme();
                 }
                 break;
+        }
+
+        function unknown_theme() {
+            const embed = new Discord.MessageEmbed()
+                .setColor(config.main_color)
+                .setAuthor("Akinator")
+                .setDescription(i18n.__("theme.unknown").replace("%theme%", theme))
+            message.channel.send(embed);
         }
     },
 
@@ -50,15 +62,21 @@ module.exports = {
             .setTitle(i18n.__("theme.translate"))
             .setDescription(i18n.__("theme.description"))
         switch (lang) {
-            case ("en" || "fr"):
+            case "en":
+            case "fr":
                 embed.addField(i18n.__("theme.instruction"), `🕵️ **${i18n.__("theme.character")}**\n❔ **${i18n.__("theme.object")}**\n😺 **${i18n.__("theme.animal")}**`)
                 lang_case = 1; // 3 modes: Character, Object and Animal
                 break;
-            case ("de" || "es" || "it" || "jp"):
+            case "de":
+            case "es":
+            case "it":
+            case "jp":
+                embed.addField(i18n.__("theme.instruction"), `🕵️ **${i18n.__("theme.character")}**\n😺 **${i18n.__("theme.animal")}**`)
                 lang_case = 2; // 2 modes: Character and Animal
                 break;
             default:
                 lang_case = 3; // Only Character
+                embed.addField(i18n.__("theme.instruction"), `🕵️ **${i18n.__("theme.character")}**`)
         }
         embed.setFooter(i18n.__("game.startup.footer").replace("%player%", message.author.tag));
         message.channel.send(embed).then(async rep => {

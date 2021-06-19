@@ -6,5 +6,9 @@ module.exports = {
             game = require("./game_react");
             game.run(client, message, lang, chose_theme, game_region, child_mode);
         }
+        if (ans_mode == "chat") {
+            game = require("./game_chat");
+            game.run(client, message, lang, chose_theme, game_region, child_mode);
+        }
     }
 }
